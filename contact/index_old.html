@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- reCAPTCHA KEY: 6LceKAoUAAAAAMqiV1-TBMJJqbYn_cOaiKvF8Vbv
+ -->
+	<meta charset="UTF-8">
+	<meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" />
+	
+	<link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/sethestep.css">
+	<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Quattrocento|Alegreya+SC:400,400i|Cormorant+Garamond" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans|Simonetta" rel="stylesheet">
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+	<script src="../js/eastcraft2.2.js"></script>
+	<script type="text/javascript" src="../slick/slick.min.js"></script>
+        async defer>
+    </script>
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans|Simonetta|Cormorant+Garamond" rel="stylesheet">
+</head>
+<body>
+	<svg class="defs-only" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<linearGradient id="bkgdGradient" gradientTransform="rotate(-36)" gradientUnits="userSpaceOnUse">
+            	<stop offset="0%"  stop-color="#a0644b" stop-opacity=".7"/>
+				<stop offset="10%"  stop-color="#af6b4b" stop-opacity=".6"/>
+            	<stop offset="20%"  stop-color="#a0644b" stop-opacity=".5"/>
+        	</linearGradient>
+        	<linearGradient id="bkgdGradient2" gradientTransform="rotate(-36)" gradientUnits="userSpaceOnUse">
+            	<stop offset="0%"  stop-color="#a4664b" stop-opacity=".7"/>
+				<stop offset="5%"  stop-color="#af6b4b" stop-opacity=".6"/>
+            	<stop offset="16%"  stop-color="#a0644b" stop-opacity=".5"/>
+        	</linearGradient>
+        	<filter id="bkgdShadow"  height="180%"> 
+      			<feColorMatrix result = "matrixOut" in = "offOut" type = "matrix" values = "0.07 0 0 0 0 0 0.04 0 0 0 0 0 0.02 0 0 0 0 0 .5 0"/>
+      			<feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="6" />
+      			<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    		</filter>
+    	</defs>
+    </svg>
+  <img id="hiddenBrand" src="../img/ec-brand.png"></img>
+  <div id="clickOut"></div>
+  
+  <div id="nav-icon">
+  	<div>
+    	<span></span>
+    	<span></span>
+    	<span></span>
+    	<span></span>
+  	</div>
+  </div>
+  <div id="mainDropdown" class="dropdown">
+  	<ul class="dropdown-options"> 
+  	 	<li><a href="../">Seth Estep Home</a></li>
+  		<li><a href="../furniture/">Furniture</a>
+  			<ul>
+  				<li><a href="../furniture/#Desks">Desks</a></li>
+    			<li><a href="../furniture/#Tables">Tables</a></li>
+    			<li><a href="../furniture/#Bookshelves">Bookshelves</a></li>
+    			<li><a href="../furniture/#StorageUnits">Storage Units</a></li>
+    		</ul>
+    	</li>
+  		<li><a href="../custom/">Custom</a></li>
+  		<li><a href="../about/">About Eastcraft</a>
+  			<ul>
+  				<li><a href="../about/#Seth">About Seth</a></li>
+    			<li><a href="../about/#Process">Process</a></li>
+    			<li><a href="../about/#Available">Available</a></li>
+  			</ul>
+  		</li>
+  		<li><a href="../contact/">Contact</a></li>
+  	</ul>
+  </div>
+
+  
+
+<header>
+	
+  	
+	<div class="ec-button home-button">
+		<a href="../" class="img-link"></a>
+  			<img src="../img/ec-brand.png"></img>
+  	</div>
+
+	<nav>
+		
+		<div class="ec-button menu-button dropdown-button" id="firstButton">
+			<a href="../furniture/" class="img-link"></a>
+			<h1 class="inset-text">FURNITURE <span class="icon triangle-case">&#xe252;</span></h1>
+			<div class="dropdown">
+  				<ul class="dropdown-options">
+  					<li><a href="../furniture/#Tables">Tables</a></li>
+    				<li><a href="../furniture/#Storage">Storage</a></li>
+    				<li><a href="../furniture/#Office">Office</a></li>
+    				<li><a href="../furniture/#Other">Other</a></li>
+ 			 	</ul>
+ 			 	
+			</div>
+		</div>
+		<div class="bowtie" id="bowtie1"></div>
+		<div class="ec-button menu-button" id="secondButton">
+			<a href="../custom/" class="img-link"></a>
+			<h1 class="inset-text">CUSTOM</h1>
+		</div>
+		<div class="bowtie" id="bowtie2"></div>
+		<div class="ec-button menu-button dropdown-button" id="thirdButton">
+			<a href="../about/" class="img-link"></a>
+			<h1 class="inset-text">ABOUT &nbsp<span class="icon triangle-case">&#xe252;</span></h1>
+			<div class="dropdown">
+  				<ul class="dropdown-options">
+    				<li><a href="../about/#Seth">About Seth</a></li>
+    				<li><a href="../about/#Process">Process</a></li>
+    				<li><a href="../about/#Available">Available</a></li>
+ 			 	</ul>
+			</div>
+		</div>
+		<div class="bowtie before-select" id="bowtie3"></div>
+		<div class="selected ec-button menu-button" id="fourthButton">
+			<a href="../contact/" class="img-link"></a>
+			<h1 class="inset-text">CONTACT</h1>
+		</div>
+  	</nav>
+  </header>
+  <div class="content-display">
+  	<div class="content-and-footer">
+		<div class="main-content hiddenstart">
+  			<div id="hiddenBrand">
+				<a href="../" class="img-link"></a>
+  			</div>
+		  	<div class="svg-container">
+		  		<svg class="bigsvg" fill="url(#bkgdGradient)" viewbox="0 0 120 120" preserveAspectRatio="none">
+    				<polygon points="8,0 112,-3 112,124 8,120"/>	
+				</svg>	
+		  		<!--svg class="bigsvg"  filter="url(#bkgdShadow)" fill="url(#bkgdGradient)" viewbox="0 -20 120 140" preserveAspectRatio="xMidYMin slice" width="100%">
+    				<svg class="top_triangle" fill="url(#bkgdGradient2)" viewBox="0 0 120 20" width="100%" height="20" y="-20" x="0" preserveAspectRatio="xMidYMax slice"> 
+    					<polygon points="8,20 112,17 112,20"/>	
+					</svg>
+					<svg class="bottom_triangle" viewBox="0 120 120 140" width="100%" height="130" preserveAspectRatio="xMidYMin slice" y="100%" x="0"  > 
+    					<polygon points="8,120 112,120 112,124"/>	
+					</svg>
+					<svg class="middle_rectangle" viewBox="0 0 120 120" y="0" x="0" width="100%" height="100%" preserveAspectRatio="none" >
+						<rect x="8" y="0" width="104" height="120"/>
+					</svg>
+
+				</svg-->	
+		    	<!--svg class="bigsvg"  filter="url(#bkgdShadow)" fill="url(#bkgdGradient)">
+    				<svg class="top_triangle" viewBox="0 0 120 10" width="100%" height="20" y="-20" x="0" preserveAspectRatio="xMidYMax slice"> 
+    					<polygon points="8,10 112,7 112,10"/>	
+					</svg>
+					<svg class="middle_rectangle" viewBox="0 0 120 120" y="0" x="0" width="100%" height="100%" preserveAspectRatio="none" >
+						<rect x="8" y="0" width="104" height="120"/>
+					</svg>
+					<svg class="bottom_triangle" viewBox="0 120.03 120 140" preserveAspectRatio="xMidYMin slice" y="100%" x="0" width="100%" height="130" > 
+    					<polygon points="8,120 112,120 112,124"/>	
+					</svg>
+				</svg-->
+			</div>
+			<div class="content-only">
+				<p class="centered-cloud no-border" > Seth is based out of Alexandria, VA.  The best way to contact him is by sending him a message:</p>
+				<div class="form-div">
+					<form id="contactForm" action="php/contactengine.php" method="post">
+						<p class="success-msg">Thank You for Reaching out to us. <br> We'll get back to you soon!</p>
+						<input name="name" type="text" class="form-input required" id="nameInput" placeHolder="Name"/>
+						<input name="email" type="email" class="form-input required" id="emailInput" placeHolder="Email"/>
+						<textarea name="message" type="text" class="form-input required" id="messageInput" placeHolder="Message"></textarea>
+						<input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
+						<div id="grecaptchaDiv" class="g-recaptcha" style="transform:scale(0.9);-webkit-transform:scale(.9);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+
+
+						<button class="ec-button submit-button" type="submit"><h1 class="inset-text">SEND</h1></button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id="footer-nav">
+			<ul class="footer-nav-ul">
+				<li><span class="icon icon-map"></span>&nbsp NAVIGATION:<ul>
+ 					<li><a href="../furniture/">Furniture</a></li>
+  					<li><a href="../custom/">Custom Projects</a></li>
+  					<li><a href="../about/">About Seth</a></li>
+  					<li><a href="../contact/">Contact</a></li>
+  				</li>
+  			</ul>
+			</div>
+			<div id="mail"><a href="../contact/"><span class="icon icon-mail"></span>&nbsp SEND US A MESSAGE</a></div>
+		</footer>
+	</div>
+  </div>
+  
+  
+</body>

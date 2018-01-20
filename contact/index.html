@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- reCAPTCHA KEY: 6LceKAoUAAAAAMqiV1-TBMJJqbYn_cOaiKvF8Vbv
+ -->
+	<title>Seth Estep | Contact</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Custom furniture builder out of Alexandria, Virginia">
+	<meta name="keywords" content="Seth Estep, Artisan, Custom, Furnishings, Furniture, Hardwood, Woodworking, Wood, Eastcraft, Alexandria, Virginia">
+	<meta name="author" content="David Klinger">	<meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0" />
+
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/sethestep.css">
+	<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Quattrocento|Alegreya+SC:400,400i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans|Simonetta|Cormorant+Garamond" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+	<script src="../js/eastcraft2.2.js"></script> 
+	<script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
+
+</head>
+<body>
+    
+  <div id="clickOut"></div>
+  <div id="nav-icon">
+  	<div>
+    	<span></span>
+    	<span></span>
+    	<span></span>
+    	<span></span>
+  	</div>
+  </div>
+  <div id="mainDropdown" class="dropdown">
+  	<ul class="dropdown-options"> 
+  	 	<li><a href="../">Seth Estep Home</a></li>
+  		<li><a href="../furniture/">Furniture</a>
+  			<ul>
+  				<li><a href="../furniture/#Tables">Tables</a></li>
+    			<li><a href="../furniture/#Storage">Storage</a></li>
+    			<li><a href="../furniture/#Office">Office</a></li>
+    			<li><a href="../furniture/#Other">Other</a></li>
+    		</ul>
+    	</li>
+  		<li><a href="../custom/">Custom</a></li>
+  		<li><a href="../about/">About</a>
+  			<ul>
+  				<li><a href="../about/#Seth">About Seth</a></li>
+    			<li><a href="../about/#Process">Process</a></li>
+    			<li><a href="../about/#OtherCrafts">Other Crafts</a></li>
+  			</ul>
+  		</li>
+  		<li><a href="../contact/">Contact</a></li>
+  	</ul>
+  </div>
+
+<header>
+	<a href="../">
+  		<div class="signature-label-div">
+  			<h1>S e t h </h1>
+  			<div class="signature-div"></div>
+  			<h1> E s t e p</h1>
+  			<h4>Custom &nbspDesigned &nbspFurniture</h4>
+  		</div>
+  	</a>
+
+	<nav>
+		<div class="ec-button menu-button dropdown-button" id="firstButton">
+			<a href="../furniture/" class="img-link"></a>
+			<h1 class="inset-text">FURNITURE <span class="icon triangle-case">&#xe252;</span></h1>
+			<div class="dropdown">
+  				<ul class="dropdown-options">
+  					<li><a href="../furniture/#Tables">Tables</a></li>
+    				<li><a href="../furniture/#Storage">Storage</a></li>
+    				<li><a href="../furniture/#Office">Office</a></li>
+    				<li><a href="../furniture/#Other">Other</a></li>
+ 			 	</ul>
+ 			 	
+			</div>
+		</div>
+		<div class="bowtie" id="bowtie1"></div>
+		<div class="ec-button menu-button" id="secondButton">
+			<a href="../custom/" class="img-link"></a>
+			<h1 class="inset-text">CUSTOM</h1>
+		</div>
+		<div class="bowtie" id="bowtie2"></div>
+		<div class="ec-button menu-button dropdown-button" id="thirdButton">
+			<a href="../about/" class="img-link"></a>
+			<h1 class="inset-text">ABOUT &nbsp<span class="icon triangle-case">&#xe252;</span></h1>
+			<div class="dropdown">
+  				<ul class="dropdown-options">
+    				<li><a href="../about/#Seth">About Seth</a></li>
+    				<li><a href="../about/#Process">Process</a></li>
+    				<li><a href="../about/#OtherCrafts">Other Crafts</a></li>
+ 			 	</ul>
+			</div>
+		</div>
+		<div class="bowtie before-select" id="bowtie3"></div>
+		<div class="selected ec-button menu-button" id="fourthButton">
+			<a href="../contact/" class="img-link"></a>
+			<h1 class="inset-text">CONTACT</h1>
+		</div>
+  	</nav>
+  </header>
+  <div class="content-display">
+  	<div class="content-and-footer">
+		<div class="main-content hiddenstart">
+  		  	<div class="signature-label-div hidden-homebutton" style="position:fixed; top:0; width:100%;">
+  	  			<a href="../">
+					<h1>S e t h </h1>
+ 					<div class="signature-div"></div>
+  					<h1> E s t e p</h1>
+  					<h4>Custom &nbspDesigned &nbspFurniture</h4>
+  				</a>
+ 		 	</div>
+		  	<div class="back-panel"></div>
+			<div class="content-only">
+				<p class="centered-cloud no-border" > Seth is based out of Alexandria, VA.  The best way to contact him is by sending him a message:</p>
+
+				<div class="form-div">
+					<form id="contactForm" action="php/contactengine.php" method="post">
+						<p class="success-msg">Thank You for Reaching out to us. <br> We'll get back to you soon!</p>
+						<input name="name" type="text" class="form-input required" id="nameInput" placeHolder="Name"/>
+						<input name="email" type="email" class="form-input required" id="emailInput" placeHolder="Email"/>
+						<textarea name="message" type="text" class="form-input required" id="messageInput" placeHolder="Message"></textarea>
+						<input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
+						<div id="grecaptchaDiv" class="g-recaptcha" style="transform:scale(0.9);-webkit-transform:scale(.9);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+
+						<button class="ec-button submit-button" type="submit"><h1 class="inset-text">SEND</h1></button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id="footer-nav">
+			<ul class="footer-nav-ul">
+				<li><span class="icon icon-map"></span>&nbsp NAVIGATION:<ul>
+ 					<li><a href="../furniture/">Furniture</a></li>
+  					<li><a href="../custom/">Custom Projects</a></li>
+  					<li><a href="../about/">About Seth</a></li>
+  					<li><a href="../contact/">Contact</a></li>
+  				</li>
+  			</ul>
+			</div>
+			<div id="mail"><a href="../contact/"><span class="icon icon-mail"></span>&nbsp SEND ME A MESSAGE</a></div>
+			<div id="siteby"><a href="http://dvdklngr.com">site by dvdklngr</a></div>
+		</footer>
+	</div>
+  </div>
+  
+  
+</body>
